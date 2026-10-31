@@ -1,4 +1,5 @@
-/* Shiv&Shu — bold type, quiet black, a little restless curiosity. */
+/* Shivanshu Shukla — bold type, quiet black, a little restless curiosity. */
+@font-face{font-family:Sora;font-style:normal;font-weight:100 800;font-display:swap;src:url('./assets/fonts/sora-latin.woff2') format('woff2')}
 @font-face{font-family:Manrope;font-style:normal;font-weight:400 800;font-display:swap;src:url('./assets/fonts/manrope-latin.woff2') format('woff2')}
 @font-face{font-family:Fraunces;font-style:italic;font-weight:600;font-display:swap;src:url('./assets/fonts/fraunces-italic-latin.woff2') format('woff2')}
 :root{color-scheme:dark;--bg-pitch:#0e0e0d;--bg-subtle:#10100f;--bg-card:#141312;--text-white:#f3f3f2;--text-gray-300:#d1d0cd;--text-gray-400:#b0aeaa;--text-gray-500:#97958f;--accent:#eee2c6;--accent-cool:#d7d6d2;--accent-dark:#211e18;--border-subtle:#2d2c29;--border-light:#504e4a;--font-body:Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--font-display:var(--font-body);--gutter:clamp(20px,4.5vw,72px);--max-width:1280px;--section-space:clamp(80px,10vw,140px);--ease-out-expo:cubic-bezier(.16,1,.3,1);--dur-fast:200ms;--dur-med:500ms;--dur-slow:900ms}
@@ -430,3 +431,8 @@ html:not(.js) .menu-toggle{display:none}.no-script-nav{display:flex;flex-wrap:wr
 }
 @media(max-width:374px){.skill-panel{padding:20px;min-height:625px}.skill-panel-main{grid-template-columns:minmax(0,1fr) 75px;gap:12px;min-height:235px}.skill-panel h3{font-size:27px}.skill-scene{height:125px}.skill-plate-front{padding:8px}.skill-plate{inset:20px 4px 14px}.skill-glyph{font-size:29px}.skill-plate-label{font-size:4px}.skill-plate-end{display:none}.skill-chips>li{padding:8px;gap:7px}.skill-chips strong{font-size:8px}.skill-concepts>span{font-size:6px}}
 @media print{.skills-directory,.skill-scene{display:none!important}.skills-workspace.is-interactive{display:block}.skill-panel[hidden]{display:flex!important}.skill-panel{break-inside:avoid;min-height:0;padding:20px}.skill-panel-main{min-height:0;display:block}.skill-chips{margin-block:20px}.skill-concepts{display:none}}
+
+/* Full-name identity: precise geometry and restrained pearl contrast. */
+.brand-wordmark{display:inline-flex;align-items:baseline;gap:.3em;font-family:Sora,Manrope,sans-serif;font-size:24px;font-style:normal;font-weight:600;line-height:1.2;letter-spacing:-.065em;white-space:nowrap}
+.brand-surname{color:var(--accent);font-weight:400}
+@media(max-width:767px){.site-nav .brand-wordmark{flex-direction:column;align-items:flex-start;justify-content:center;gap:0;font-size:17px;line-height:1.2;letter-spacing:-.055em}.site-nav .brand-surname{font-size:15px}.site-footer .brand-wordmark{font-size:24px}}
