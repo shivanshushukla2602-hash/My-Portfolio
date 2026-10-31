@@ -433,6 +433,7 @@ html:not(.js) .menu-toggle{display:none}.no-script-nav{display:flex;flex-wrap:wr
 @media print{.skills-directory,.skill-scene{display:none!important}.skills-workspace.is-interactive{display:block}.skill-panel[hidden]{display:flex!important}.skill-panel{break-inside:avoid;min-height:0;padding:20px}.skill-panel-main{min-height:0;display:block}.skill-chips{margin-block:20px}.skill-concepts{display:none}}
 
 /* Full-name identity: precise geometry and restrained pearl contrast. */
-.brand-wordmark{display:inline-flex;align-items:baseline;gap:.3em;font-family:Sora,Manrope,sans-serif;font-size:24px;font-style:normal;font-weight:600;line-height:1.2;letter-spacing:-.065em;white-space:nowrap}
-.brand-surname{color:var(--accent);font-weight:400}
-@media(max-width:767px){.site-nav .brand-wordmark{flex-direction:column;align-items:flex-start;justify-content:center;gap:0;font-size:17px;line-height:1.2;letter-spacing:-.055em}.site-nav .brand-surname{font-size:15px}.site-footer .brand-wordmark{font-size:24px}}
+.brand-wordmark{display:inline-flex;align-items:center;gap:.28em;font-family:Sora,Manrope,sans-serif;font-size:25px;font-style:normal;font-weight:800;line-height:1;letter-spacing:-.055em;white-space:nowrap}
+.brand-surname{color:var(--accent);font-weight:800}
+.brand-wordmark>span{text-box-trim:trim-both;text-box-edge:cap alphabetic}
+@media(max-width:767px){.site-nav .brand-wordmark{flex-direction:column;align-items:flex-start;justify-content:center;gap:5px;font-size:17px;line-height:1.2;letter-spacing:-.055em}.site-nav .brand-surname{font-size:15px}.site-footer .brand-wordmark{font-size:24px}}
