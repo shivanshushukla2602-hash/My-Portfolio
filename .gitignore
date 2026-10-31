@@ -1,0 +1,13 @@
+# Machine-local files and credentials
+.DS_Store
+.env
+.env.*
+!.env.example
+.vercel/
+node_modules/
+*.log
+
+# Local previews, research captures, and working notes
+.dist/
+output/
+REDESIGN.md

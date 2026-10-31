@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style type="text/css">
+      header{
+        display:flex;
+        justify-content:space-between;
+        padding:10px;
+        top:0;
+        position:fixed;
+      }
+      .h1{
+        color:white;
+        font-size:26px;
+        margin-top:10px;
+      }
+      .h2{
+        margin-left:120px;
+      }
+      .h3{
+        margin-right:-9px;
+        margin-left:327px;
+      }
+      h3{
+        margin-left:10px;
+        font-size:15px;
+      }
+      .bi-youtube{
+        color:rgba(250, 32, 39, 0.927);
+        margin-left:20px;
+      }
+      .bi-list{
+        margin-left:10px;
+        cursor:pointer;
+      }
+      .b1{
+        width:550px;
+        height:35px;
+        border-radius:35px;
+        font-size: 22px;
+        background-color:rgba(164, 164, 164, 0.242);
+        border:1px solid black;
+        height:40px;
+      }
+      
+      .b2{
+        font-size:17px;
+      }
+      .s{
+        margin-right:430px;
+        color:gray;
+      }
+      .bi-search{
+        color:white;
+      }
+      .bi-bell{
+        color:white;
+        margin-left:10px;
+        font-size:22px;
+        cursor:pointer;
+      }
+      .bi-mic{
+        color:white;
+        font-size:25px;
+        margin-left:13px;
+        cursor:pointer;
+      }
+      .me{
+        color:white;
+        border-radius:21px;
+        margin-left:15px;
+        font-size:22px;
+        background-color:rgba(76, 97, 215, 0.923);
+        padding: 7px;
+        cursor:pointer;
+      }
+      .in{
+        font-size:13px;
+        color:gray;
+      }
+      .b2{
+        width:100px;
+        height:35px;
+        border-radius:35px;
+        color:white;
+        background-color:rgba(164, 164, 164, 0.242);
+        border:1px solid black;
+        height:40px;
+        cursor:pointer;
+      }
+      main{
+        display:flex;
+        color:white;
+      }
+      hr{
+        width:205px;
+        margin-left:40px;
+        color:gray;
+      }
+      .recommendation{
+        text-align:center;
+        display:flex;
+        gap:10px;
+        flex-wrap:nowrap;
+        margin-left:13px;
+        position:fixed;
+        overflow:auto;
+      }
+      .s2{
+        margin-left:200px;
+        margin-top:50px;
+      }
+      .box{
+        border:1px solid black;
+        background-color:rgba(164, 164, 164, 0.242);
+        width:110px;
+        border-radius:10px;
+      }
+      .box5{
+        border:1px solid black;
+        background-color:rgba(164, 164, 164, 0.242);
+        width:70px;
+        border-radius:10px;
+      }
+      .King{
+        border:1px solid black;
+        background-color:rgba(164, 164, 164, 0.242);
+        width:130px;
+        border-radius:10px;
+      }
+      .all{
+        border:1px solid black;
+        background-color:rgba(164, 164, 164, 0.242);
+        width:40px;
+        border-radius:10px;
+      }
+      .all1{
+        border:1px solid black;
+        background-color:white;
+        color:black;
+        width:35px;
+        border-radius:10px;
+        font-size:15px;
+      }
+      .box3{
+        border:1px solid black;
+        background-color:rgba(164, 164, 164, 0.242);
+        width:70px;
+        border-radius:10px;
+      }
+      .box4{
+        border:1px solid black;
+        background-color:rgba(164, 164, 164, 0.242);
+        width:50px;
+        border-radius:10px;
+      }
+      ul{
+        list-style-type:none;
+        line-height:35px;
+      }
+      .s1{
+        margin-left:-25px;
+        overflow:auto;
+        height:790px;
+        position:fixed;
+        margin-top:50px;
+      }
+      .end{
+        color:gray;
+      }
+      iframe{
+        border:1px solid black;
+        border-radius:10px;
+        width:370px;
+        height:240px;
+      }
+      .frame1{
+        border:1px solid black;
+        border-radius:10px;
+        width:370px;
+        height:240px;
+        margin-left:10px;
+      }
+      .frame2{
+        border:1px solid black;
+        border-radius:10px;
+        width:370px;
+        height:240px;
+        margin-right:20px;
+      }
+      .frame3{
+        border:1px solid black;
+        border-radius:10px;
+        width:370px;
+        height:240px;
+        margin-right: 20px;
+      }
+      .body{
+        margin-left:50px;
+        margin-top:70px;
+      }
+      .row1{
+        display:flex;
+        gap:15px;
+      }
+      .row3{
+        margin-left:35px;
+        display:flex;
+        gap:15px;
+      }
+      .info{
+        display:flex;
+      }
+      img{
+        height:10%;
+        width:10%;
+        border-radius:50%;
+        margin-top:25px;
+      }
+      .content{
+        margin-left:-20px;
+      }
+      .color2{
+        font-size:14px;
+        color:gray;
+      }
+      .bi-check-circle-fill{
+        font-size:14px;
+        color:gray;
+      }
+      .bi-dot{
+        font-size:20px;
+        color:gray;
+      }
+      .small{
+        font-size:13px;
+        margin-left:10px;
+      }
+      li{
+        gap:40px;
+      }
+      .home{
+        border:1px solid black;
+        background-color:rgba(164, 164, 164, 0.242);
+        width: 200px;
+        border-radius:10px;
+        padding-left:10px;
+      }
+      .option{
+        margin-left:10px;
+      }
+      .bi-house-fill{
+        font-size:50px;
+      }
+      .content{
+        line-height:23px;
+      }
+    </style>
+</head>
+<body bgcolor="black">
+    <header>
+       <div class="h1">
+        <span class="bi bi-list"></span>
+        <span class="bi bi-youtube"></span>
+        <span>YouTube</span>
+        <sup class="in">IN</sup>
+       </div>
+       <div class="h2">
+        <button class="b1">
+            <span class="s">Search</span>
+            <span class="bi bi-search"></span>
+        </button>
+        <span class="bi bi-mic"></span>
+       </div>
+       <div class="h3">
+        <button class="b2">
+            <span class="bi bi-plus"></span>
+            <span class="c">Create</span>
+        </button>
+        <span class="bi bi-bell"></span>
+        <span class="me">S</span>
+       </div>
+    </header>
+    <main>
+      <section class="s1">
+       <ul>
+        <li class="home">
+          <span class="bi bi-house-door-fill"></span>
+          <span>Home</span>
+        </li>
+        <li class="option">
+          <span class="bi bi-"></span>
+          <span>Shorts</span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>Subscriptions</span>
+        </li>
+       </ul>
+       <hr>
+       <ul>
+        <h3>
+          <span>You</span>
+          <span class="bi bi-chevron-right"></span>
+        </h3>
+        <li class="option">
+          <span class=""></span>
+          <span>History</span>
+        </li>
+        <li class="option">
+          <span>
+            <span></span>
+            <span>Playlist</span>
+          </span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>Your videos</span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>Watch Later</span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>Liked videos</span>
+        </li>
+       </ul>
+       <hr>
+       <ul>
+        <h3>Explore</h3>
+        <li class="option">
+          <span></span>
+          <span>Shopping</span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>Music</span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>Films</span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>Live</span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>Gaming</span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>News</span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>Sport</span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>Courses</span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>Fashion & beauty</span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>Podcasts</span>
+        </li>
+       </ul>
+       <hr>
+       <ul>
+        <h3>More from YouTube</h3>
+        <li class="option">
+          <span></span>
+          <span>YouTube Premium</span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>YouTube Studio</span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>YouTube Music</span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>YouTube Kids</span>
+        </li>
+       </ul>
+       <hr>
+       <ul>
+        <li class="option">
+          <span></span>
+          <span>Settings</span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>Report History</span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>Help</span>
+        </li>
+        <li class="option">
+          <span></span>
+          <span>Send Feedback</span>
+        </li>
+       </ul>
+       <hr>
+       <ul class="end">
+          <li class="option">About Press Copyright</li>
+          <li class="option">Contact us Creator Advertise</li>
+          <li class="option">Developers</li>
+       </ul>
+       <ul class="end">
+          <li class="option">Terms Privacy Policy & Safety</li>
+          <li class="option">How YouTube works</li>
+          <li class="option">Test new features</li>
+       </ul>
+       <ul class="end">
+          <li class="small">&copy 2025 Google LLC</li>
+       </ul>
+      </section>
+      <section class="s2">
+        <ul class="recommendation">
+          <li class="all1">ALL</li>
+          <li class="King">Shah Rukh Khan</li>
+          <li class="box3">Podcasts</li>
+          <li class="box">Akshay Kumar</li>
+          <li class="box4">Music</li>
+          <li class="box">Ranbir Kapoor</li>
+          <li class="box3">JEE Main</li>
+          <li class="box">Film Criticism</li>
+          <li class="box4">Mixes</li>
+          <li class="box5">Trailers</li>
+          <li class="box5">Tseries</li>
+          <li class="box">Pshycology</li>
+          <li class="box3">Thoughts</li>
+          <li class="box">Study Skills</li>
+          <li class="box3">Gaming</li>
+          <li class="all">Live</li>
+          <li class="box3">HairCare</li>
+          <li class="King">Indian pop music</li>
+          <li class="box3">Watched</li>
+          <li class="box">Recently added</li>
+          <li class="box">New to you</li>
+        </ul>
+        <div class="body">
+            <div class="row1">
+              <div>
+                <iframe width="996" height="560" src="https://www.youtube.com/embed/Uu2QK9Z9X5E" title="KING | Title Reveal | Shah Rukh Khan | Siddharth Anand | It’s Showtime | 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="info">
+            <img src="https://yt3.ggpht.com/Y6CUULiSzPyQfJjXycIun5O-0u0pz3NrsgQhRCpUw-9SbBEDF-ORD_C_DUuCfphx695RQ3_Qyg=s68-c-k-c0x00ffffff-no-rj">
+            <ul class="content">
+            <li>
+              <span>KING | Title Reveal | Shah Rukh Khan |</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              <span class="bi bi-three-dots-vertical"></span>
+              <br>
+              <span>Siddharth Anand | It's...</span>
+            </li>
+            <li>
+              <span class="color2">Red Chillies Entertainment</span>
+              <span class="bi bi-check-circle-fill"></span>
+            </li> 
+            <li>
+              <span class="color2">37M Views</span>
+              <span class="bi bi-dot"></span>
+              <span class="color2">6 days ago</span>
+            </li>
+          </ul>
+          </div>
+          </div>
+          <div>
+                <iframe width="996" height="525" src="https://www.youtube.com/embed/gzUu-FJ7s-Y" title="Namit Malhotra&#39;s Ramayana: The Introduction | Nitesh Tiwari | Ranbir, Yash, Hans Zimmer &amp; AR Rahman" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="info">
+            <img src="https://yt3.ggpht.com/42o3XIW1j5zmzsFeZs3ND4QwaXXrnpK9vqftcEuEdbgNhPbltXRktcSmyJ12-gSRqKch93Ir=s68-c-k-c0x00ffffff-no-rj">
+            <ul class="content">
+            <li>
+              <span>Namit Malhotra's Ramayana: The Intro |</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              <span class="bi bi-three-dots-vertical"></span>
+              <br>
+              <span>Nitesh Tiwari | Ranbir , Yash...</span>
+            </li>
+            <li>
+              <span class="color2">Sony Music India</span>
+              <span class="bi bi-check-circle-fill"></span>
+            </li> 
+            <li>
+              <span class="color2">22M Views</span>
+              <span class="bi bi-dot"></span>
+              <span class="color2">4 months ago</span>
+            </li>
+          </ul>
+          </div>
+          </div>
+          <div>
+                <iframe width="996" height="560" src="https://www.youtube.com/embed/M8ICGx4p0lA" title="@Zakir Khan On Parents, Relationship, Bollywood, Success, Money | Zakir Khan | FO 148 | Raj Shamani" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="info">
+            <img src="https://yt3.ggpht.com/qSVJkhoSs6lw5cNMsZAJ8ZAk1pxiewDb_gLtnzOsyM5TWQ6YggQj0eBetOLSxFuJqgxsyQ73NA=s68-c-k-c0x00ffffff-no-rj">
+            <ul class="content">
+            <li>
+              <span>@Zakir Khan On Parents, Relationships, </span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              <span class="bi bi-three-dots-vertical"></span>
+              <br>
+              <span>Success, Money | Zakir Khan...</span>
+            </li>
+            <li>
+              <span class="color2">Raj Shamani</span>
+              <span class="bi bi-check-circle-fill"></span>
+            </li> 
+            <li>
+              <span class="color2">5.9M Views</span>
+              <span class="bi bi-dot"></span>
+              <span class="color2">1 year ago</span>
+            </li>
+          </ul>
+          </div>
+          </div>
+          </div>
+          <div class="row1">
+              <div>
+                <iframe width="996" height="560" src="https://www.youtube.com/embed/ti39UJYgc5s" title="Kerala’s Most Beautiful Place Munnar | South India | Kolukkumalai | Suryanelli Village" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="info">
+            <img src="https://yt3.ggpht.com/51PnpREomCzuTtbwKN-ISpxP5Vxf-iS8nlSfYsb9sW_AHjVTF9hyFW6cuydI3hRrffcmnIRk5Q=s68-c-k-c0x00ffffff-no-rj">
+            <ul class="content">
+            <li>
+              <span>Kerala's Most Beautiful Place | Munnar |</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              <span class="bi bi-three-dots-vertical"></span>
+              <br>
+              <span>South India | Kolukkumalai</span>
+            </li>
+            <li>
+              <span class="color2">Kanishk Gupta</span>
+              <span class="bi bi-check-circle-fill"></span>
+            </li> 
+            <li>
+              <span class="color2">5.1M Views</span>
+              <span class="bi bi-dot"></span>
+              <span class="color2">1 year ago</span>
+            </li>
+          </ul>
+          </div>
+          </div>
+          <div>
+                <iframe width="996" height="560" src="https://www.youtube.com/embed/0BBjTyseobI" title="Raghav Juyal - The Superstar in Making | Crazy Bollywood Stories, Dancing, Acting &amp; Love Life I TRS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="info">
+            <img src="https://yt3.ggpht.com/ZacOubrU69jBN4JfkDBZUO_fXzZtBzyaqFk--9h6uXROAgf6qAJZiA60-EzF-l8XdnIrA7oy=s68-c-k-c0x00ffffff-no-rj">
+            <ul class="content">
+            <li>
+              <span>Raghav Juyal - The Star in Making | </span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              <span class="bi bi-three-dots-vertical"></span>
+              <br>
+              <span>Crazy Bollywood Stories,...</span>
+            </li>
+            <li>
+              <span class="color2">Ranveer Allahabadia</span>
+              <span class="bi bi-check-circle-fill"></span>
+            </li> 
+            <li>
+              <span class="color2">2.9M Views</span>
+              <span class="bi bi-dot"></span>
+              <span class="color2">1 month ago</span>
+            </li>
+          </ul>
+          </div>
+          </div>
+          <div>
+                <iframe width="996" height="560" src="https://www.youtube.com/embed/fEnwMyHejtQ" title="Nikhil Kamath x Ranbir Kapoor | People by WTF Ep #2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="info">
+                  <img src="https://yt3.ggpht.com/XGYri31DcKi98pan5DYErwHPuPSQbUX97DpRzp-652rpXvrXuokR_YJrSdm6LJJORJkTvL7kBF0=s68-c-k-c0x00ffffff-no-rj">
+            <ul class="content">
+            <li>
+              <span>Nikhil Kmath X Ranbir Kapoor |</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              <span class="bi bi-three-dots-vertical"></span>
+              <br>
+              <span>People by WTF...</span>
+            </li>
+            <li>
+              <span class="color2">Nikhil Kamath</span>
+              <span class="bi bi-check-circle-fill"></span>
+            </li> 
+            <li>
+              <span class="color2">4.7M Views</span>
+              <span class="bi bi-dot"></span>
+              <span class="color2">1 year ago</span>
+            </li>
+          </ul>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="row3">
+              <div>
+                <iframe width="996" height="560" src="https://www.youtube.com/embed/IXKu3w5-glc" title="IND v AUS | 2016 T20WC | Hindi Highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="frame1"></iframe>
+                <div class="info">
+                  <img src="https://yt3.googleusercontent.com/78fjpGo2Fn7MJOhlLyqamRQaNlMZBP_ZYJiFh5BRRLa2qHi-IlANnhiY7pYEYc_mcFfP7iCxAg=s160-c-k-c0x00ffffff-no-rj">
+                  <ul class="content">
+            <li>
+              <span>IND v Aus | 2016 T20WC | Hindi</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              <span class="bi bi-three-dots-vertical"></span>
+              <br>
+              <span>Highlights</span>
+            </li>
+            <li>
+              <span class="color2">ICC</span>
+              <span class="bi bi-check-circle-fill"></span>
+            </li> 
+            <li>
+              <span class="color2">24M Views</span>
+              <span class="bi bi-dot"></span>
+              <span class="color2">24 years ago</span>
+            </li>
+          </ul>
+                </div>
+          </div>
+          <div>
+                <iframe width="996" height="414" src="https://www.youtube.com/embed/LPhqL4DqzBg" title="Avengers: Endgame  | Official Trailer | Hindi | In Cinemas April 26" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="frame2"></iframe>
+          <div class="info">
+            <img src="https://yt3.googleusercontent.com/k7BhK-hm9_MbJbaKznHPhir6e4pWXbm1ppAHoseLIzRgoAPBMmH1IIhYKlXbGono25RD1OQwHQ=s160-c-k-c0x00ffffff-no-rj">
+            <ul class="content">
+            <li>
+              <span>Marvel Studios' Avengers - Official</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              <span class="bi bi-three-dots-vertical"></span>
+              <br>
+              <span>Trailer</span>
+            </li>
+            <li>
+              <span class="color2">Marvel Entertainment</span>
+              <span class="bi bi-check-circle-fill"></span>
+            </li> 
+            <li>
+              <span class="color2">110M Views</span>
+              <span class="bi bi-dot"></span>
+              <span class="color2">6 years ago</span>
+            </li>
+          </ul>
+          </div>
+          </div>
+          <div>
+                
+            <iframe width="996" height="560" src="https://www.youtube.com/embed/1J0o3v8ptHY" title="Virat Kohli On Dressing Room Music, Dhawan&#39;s Humour, his Salesman Skills &amp; Dhoni I BwC S4E1 | Part 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="frame3"></iframe>
+          <div class="info">
+            <img src="https://yt3.ggpht.com/ytc/AIdro_l64y_M7lSze0YxX3Mw9X2X0c9HMv4iJ-4pDJFFtsbPTA=s88-c-k-c0x00ffffff-no-rj">
+            <ul class="content">
+            <li>
+              <span>Virat Kohli on First Dressing Room Prank,</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+              <span class="bi bi-three-dots-vertical"></span>
+              <br>
+              <span>his Wardrobe Malfunction & Worst Phase...</span>
+            </li>
+            <li>
+              <span class="color2">Oaktree Sports</span>
+              <span class="bi bi-check-circle-fill"></span>
+            </li> 
+            <li>
+              <span class="color2">5.9M Views</span>
+              <span class="bi bi-dot"></span>
+              <span class="color2">1 year ago</span>
+            </li>
+          </ul>
+          </div>
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon MX Player - Watch Movies , Series & TV Shows</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style type="text/css">
+      .logo{
+        width:15%;
+        margin-top:-40px;
+        cursor:pointer;
+      }
+      header{
+        display:flex;
+        justify-content:space-between;
+      }
+      .h1{
+        padding-right:220px;
+        margin-top:5px;
+        font-size:20px;
+      }
+      .h2{
+         margin-top:5px;
+         font-size:20px;
+         cursor:pointer;
+      }
+      .bi-play-circle-fill{
+       color:rgb(232, 169, 8);
+      }
+      .b1{
+        border-radius:30px;
+        border:1px solid black;
+        background-color:black;
+        color:white;
+        height:24px;
+        cursor:pointer;
+      }
+      .bi-house-door-fill{
+        color:blue;
+      }
+      article{
+        overflow:auto;
+        display:flex;
+       
+      }
+      .bi-chevron-right{
+        color:blue;
+        cursor:pointer;
+      }
+      .movie-cards{
+        overflow:auto;
+        display:flex;
+      }
+      .movies{
+        border:1px solid black;
+        width:15%;
+        margin-left:15px;
+        border-radius:15px;
+        box-shadow:5px 5px 10px;
+        cursor:pointer;
+      }
+      .m1{
+        margin-top:50px;
+      }
+      .image2{
+        width:35%;
+      }
+      .apps{
+        margin-top:30px;
+      }
+      .f1{
+        display:flex;
+      }
+      .f2{
+        display:flex;
+        justify-content:space-around;
+        margin-top:40px;
+      }
+      .image3{
+        width:40%;
+        margin-top:-150px;
+        margin-left:220px;
+      }
+      ol{
+        list-style-type:none;
+        margin-top:50px;
+      }
+      li{
+        color:gray;
+        font-size:20px;
+      }
+      li:hover{
+        color:blue;
+      }
+      .row2{
+        margin-right:100px;
+      }
+      .row3{
+        margin-right:200px;
+      }
+      .row4{
+        margin-top:30px;
+        line-height:24px;
+        margin-left:-100px;
+      }
+      .info1{
+        margin-top:20px;
+        margin-bottom:20px;
+        color:gray;
+      }
+      .info2{
+        line-height:24px;
+        margin-left:18px;
+        font-size:18px;
+      }
+      .info3{
+        font-size:19px;
+        color:gray;
+        cursor:pointer;
+      }
+      .info4{
+        color:gray;
+      }
+      .apps{
+        margin-left:18px;
+        font-size:25px;
+        cursor:pointer;
+      }
+      .color{
+        color:gray;
+        cursor:pointer;
+      }
+      .color:hover{
+        color:blue;
+      }
+      .f3{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin-top:30px;
+        color:rgba(36, 133, 237, 0.956);
+        font-weight:bold;
+        cursor:pointer;
+      }
+      .f4{
+        display:flex;
+        justify-content:space-around;
+        margin-top:30px;
+        line-height:25px;
+      }
+      .font{
+        font-size:18px;
+        font-weight:bold;
+      }
+      .color2{
+        color:gray;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./assets/mxplayer-logo.png" class="logo">
+       <div class="h1">
+        <span class="bi bi-house-door-fill"></span>&nbsp&nbsp&nbsp
+        <span>Shows</span>&nbsp&nbsp&nbsp
+        <span>Movies</span>&nbsp&nbsp&nbsp
+        <span>New & Festive</span>&nbsp&nbsp&nbsp
+        <span>VDesi</span>&nbsp&nbsp&nbsp
+        <span>Rise & Fall</span>&nbsp&nbsp&nbsp
+        <span>Trailers</span>&nbsp&nbsp&nbsp
+       </div>
+       <div class="h2">
+        <span class="bi bi-search"></span>&nbsp&nbsp&nbsp
+        <button class="b1">
+         <span class="bi bi-play-circle-fill"></span>
+         <span>Upgrade to MX Gold</span>
+        </button> &nbsp&nbsp&nbsp
+        <span>Login</span>&nbsp&nbsp&nbsp
+        <span class="bi bi-list"></span>&nbsp&nbsp&nbsp
+       </div>
+    </header>
+      <article>
+        <img src="https://qqcdnpictest.mxplay.com/pic/d18255b2ab819d6f699babe9dd3c3981/en/16x9/1800x1012/test_pic1761123212699.webp" width="100%">
+        <img src="https://qqcdnpictest.mxplay.com/pic/5762f91ad7a5818d8af2d253d6d9ad0b/en/16x9/1800x1012/test_pic1760066150023.webp" width="100%">
+        <img src="https://qqcdnpictest.mxplay.com/pic/59d383b028a6cb7589671d1693484787/en/16x9/1800x1012/test_pic1738230555503.webp" width="100%">
+      </article>
+    <main class="m1">
+        <h2>
+          <span>Bollywood Top Hits</span>&nbsp
+          <span class="bi bi-chevron-right"></span>
+        </h2>
+        <div class="movie-cards">
+            <img src="https://qqcdnpictest.mxplay.com/pic/a547ffd993b9c4f77a442a9ef16b854e/en/2x3/480x720/test_pic1740041486045.webp" class="movies">
+            <img src="https://qqcdnpictest.mxplay.com/pic/8222f7180c9a9387e057d1f656fdc9cd/en/2x3/480x720/test_pic1740039288983.webp" class="movies">
+            <img src="https://qqcdnpictest.mxplay.com/pic/b760237256df28945f151d8b5bc59f6a/en/2x3/480x720/test_pic1734167688794.webp" class="movies">
+            <img src="https://qqcdnpictest.mxplay.com/pic/ea9cba51b4416772dd537d8a3e17a705/en/2x3/480x720/test_pic1734088470102.webp" class="movies">
+            <img src="https://qqcdnpictest.mxplay.com/pic/8ed2c343f565ee0a5821203db2f8b2c9/en/2x3/480x720/test_pic1733467897757.webp" class="movies">
+            <img src="https://qqcdnpictest.mxplay.com/pic/f1b95183288091c0e5a58252a6c65c9e/en/2x3/480x720/test_pic1736412057229.webp" class="movies">
+            <img src="https://qqcdnpictest.mxplay.com/pic/6bbe3e1e75d2f6ea2d1d14160ad02543/en/2x3/480x720/test_pic1733468472023.webp" class="movies">
+            <img src="https://qqcdnpictest.mxplay.com/pic/4b18f03046911205cca0cabf206395fe/en/2x3/480x720/test_pic1734167029433.webp" class="movies">
+            <img src="https://qqcdnpictest.mxplay.com/pic/d2ebb43bdffefecb430ecfb1390af6c8/en/2x3/480x720/test_pic1743162487595.webp" class="movies">
+            <img src="https://qqcdnpictest.mxplay.com/pic/7d5bd55897d99c95d8661f64d1654439/en/2x3/480x720/test_pic1734168464151.webp" class="movies">
+        </div>
+    </main>
+    <main class="m1">
+        <h2>
+            <span>Anime Now in Hindi!</span>
+            <span class="bi bi-chevron-right"></span>
+        </h2>
+        <div class="movie-cards">
+          <img src="https://qqcdnpictest.mxplay.com/pic/93f7d9a261038df4c2fddff1e9923c47/en/2x3/480x720/test_pic1760925677259.webp" class="movies">
+          <img src="https://qqcdnpictest.mxplay.com/pic/ac35f2ea79764818ccb89722e34db88f/en/2x3/480x720/test_pic1746435026806.webp" class="movies">
+          <img src="https://qqcdnpictest.mxplay.com/pic/f4882bd59f9569a33171a160bc4bc75f/en/2x3/480x720/test_pic1746435511978.webp" class="movies">
+          <img src="https://qqcdnpictest.mxplay.com/pic/686472fb4dfad577bea35ddb10949d1a/en/2x3/480x720/test_pic1759387056629.webp" class="movies">
+          <img src="https://qqcdnpictest.mxplay.com/pic/24c01032195025fe0b090e1bfd37ab98/en/2x3/480x720/test_pic1760413245290.webp" class="movies">
+          <img src="https://qqcdnpictest.mxplay.com/pic/10efc2ce3e6bd68748be48a3b3d39904/en/2x3/480x720/test_pic1747209999921.webp" class="movies">
+          <img src="https://qqcdnpictest.mxplay.com/pic/504163a38f19140e15ab2fa55723a78d/en/2x3/480x720/test_pic1747214803914.webp" class="movies">
+          <img src="https://qqcdnpictest.mxplay.com/pic/e9a099f562ad9d7c0c9d3750e5895713/en/16x9/480x270/test_pic1760449681654.webp" class="movies">
+          <img src="https://qqcdnpictest.mxplay.com/pic/71fd7c663edf5b4b037959b50fe2ce32/en/2x3/480x720/test_pic1746016864788.webp" class="movies">
+          <img src="https://qqcdnpictest.mxplay.com/pic/1421e25cae193ff678e0337ecf974b71/en/2x3/480x720/test_pic1758682894918.webp" class="movies">
+        </div>
+    </main>
+    <main class="m1">
+      <h2>
+        <span>Dubbed South BlockBusters</span>&nbsp
+        <span class="bi bi-chevron-right"></span>
+      </h2>
+      <div class="movie-cards">
+        <img src="https://qqcdnpictest.mxplay.com/pic/c05d085a6debcc3931fe28a1c1166671/en/2x3/480x720/test_pic1603450174429.webp" class="movies">
+        <img src="https://qqcdnpictest.mxplay.com/pic/67f83bc812b652bb475b7c8b358582f7/en/2x3/480x720/5cd29c172033d38a77e73e213d08b9c4_1280x1920.webp" class="movies">
+        <img src="https://qqcdnpictest.mxplay.com/pic/2b1585e87da1e8deac286a0efe9ec9aa/en/2x3/480x720/2bce71b39a23cb676e24321d91298f2b_1280x1920.webp" class="movies">
+        <img src="https://qqcdnpictest.mxplay.com/pic/f70072e25d13317960c8c07183946d56/en/2x3/480x720/test_pic1704296304614.webp" class="movies">
+        <img src="https://qqcdnpictest.mxplay.com/pic/dba628bcf4e61975d7ed406847375783/en/2x3/480x720/dfa2a68cd1fc8c23568300d7dc5e4002_1280x1920.webp" class="movies">
+        <img src="https://qqcdnpictest.mxplay.com/pic/142ff962bee46c5748b8c49a082f17fc/en/2x3/480x720/bdd33dd89bb888966e70dd6b93f7f59a_1280x1920.webp" class="movies">
+        <img src="https://qqcdnpictest.mxplay.com/pic/18c95c8dd13cd0c43aec40e619282107/en/2x3/480x720/test_pic1633686180700.webp" class="movies">
+        <img src="https://qqcdnpictest.mxplay.com/pic/f7675bb53b13bc07c1780a66c1103d54/en/16x9/480x270/test_pic1575975040981.webp" class="movies">
+        <img src="https://qqcdnpictest.mxplay.com/pic/e138bcabc026f09f5c92b00e3d64db58/en/2x3/480x720/test_pic1740039477167.webp" class="movies">
+        <img src="https://qqcdnpictest.mxplay.com/pic/cc76dfd40c56091fd308b0678ff54648/en/2x3/480x720/f69eff50fe280db95916e3b9308c612d_1280x1920_badged_1734152476741.webp" class="movies">
+      </div>
+    </main>
+    <main class="m1">
+        <h2>
+            <span>Dubbed Hollywood Action</span>
+            <span class="=bi bi-chevron-right"></span>
+        </h2>
+        <div class="movie-cards">
+            <img src="https://qqcdnpictest.mxplay.com/pic/6780d020dbcd275fe58fa598a7bbf7f3/en/2x3/480x720/f94056143ec8c59a45be52ebb9407189_1280x1920.webp" class="movies">
+            <img src="https://qqcdnpictest.mxplay.com/pic/cdc5961af25b74599321927ece4cd258/en/2x3/480x720/test_pic1623749520616.webp" class="movies">
+            <img src="https://qqcdnpictest.mxplay.com/pic/77a08d815ad8514bec0da09c883b9616/en/2x3/480x720/a64dc33b28ee84e765da6a799aeef86d_1280x1920.webp" class="movies">
+            <img src="https://qqcdnpictest.mxplay.com/pic/c630f6ab0cc4e9297376d5657565c678/en/2x3/480x720/608570e60b6d2370b5756405ae746302_1280x1920.webp" class="movies">
+            <img src="https://qqcdnpictest.mxplay.com/pic/539a62ae9b46e4f441663892cb4245f1/en/2x3/480x720/17e62c872e3780ca18ae7cfef9692db4_1280x1920.webp" class="movies">
+            <img src="https://qqcdnpictest.mxplay.com/pic/b1e63bdf661f4c026d19fc5865eb0103/en/16x9/480x270/039d2e1924c960afd7363a0069906674_1920x1080.webp" class="movies">
+            <img src="https://qqcdnpictest.mxplay.com/pic/bce7ae02445dad432bdab581e180ceef/en/2x3/480x720/d5f863cd13cc307123989701f8b72fdf_1280x1920.webp" class="movies">
+            <img src="https://qqcdnpictest.mxplay.com/pic/5c26137ba68b2b22251ffbd07a06481b/en/2x3/480x720/14f3cae809aef8248790cb95e423fcd3_1280x1920.webp" class="movies">
+            <img src="https://qqcdnpictest.mxplay.com/pic/6f913706db4658ceb8443d9ef805f529/en/2x3/480x720/67ef2a653681e8c597252b28920e8c37_1280x1920.webp" class="movies">
+            <img src="https://qqcdnpictest.mxplay.com/pic/7c68d12003e8a93fbc1a6d8f907fb0bd/en/2x3/480x720/efaf6eda390b2706d526813158ab2f79_1280x1920.webp" class="movies">
+        </div>
+    </main>
+    <footer>
+        <div class="f2">
+          <div>
+            <h3>MX Original</h3>
+            <span class="color">Aashram</span><br>
+            <span class="color">Indori ishq</span>
+          </div>
+          <div>
+            <h3>Movies by language</h3>
+            <span class="color">Hindi Movies</span><br>
+            <span class="color">Tamil Movies</span>
+          </div>
+          <div>
+            <h3>Movies by Genre</h3>
+            <span class="color">Crime Movies</span><br>
+            <span class="color">Action Movies</span>
+          </div>
+          <div>
+            <h3>Down the Lane</h3>
+            <span class="color">2024 Hindi Movies</span><br>
+            <span class="color">2023 Web Series</span>
+          </div>
+          <div>
+            <h3>New Shows</h3>
+            <span class="color">Rise and Fall</span><br>
+            <span class="color">First Copy</span>
+          </div>
+          <div>
+            <h3>International Shows</h3>
+            <span class="color">My Home My Destiny</span><br>
+            <span class="color">Day Dreamer</span>
+          </div>
+        </div>
+        <div class="f3">
+          <span>Expand All</span>&nbsp&nbsp
+          <span class="bi bi-chevron-down"></span>
+        </div>
+        <div class="f4">
+          <div>
+            <span class="font">Watch Bindiya Ke Bahubali, An Amazon MX Player</span><br>
+            <span class="font">Original Web Series for Free!</span><br>
+            <span class="color2">Welcome to Bindiya, where bullets fly faster than gossip,...</span>
+          </div>
+          <div>
+            <span class="font">Watch the Latest Movies in Regional Languages and</span><br>
+            <span class="font">TV Shows Online on Amazon MX Player</span><br>
+            <span class="color2">If you are looking for the latest movies, most popular web...</span>
+          </div>
+          <div>
+            <span class="font">Stream New Released TV Shows, Trailers for Free</span><br>
+            <span class="font">Online on Amazon MX Player</span><br>
+            <span class="color2">While entertainment has no language,it sure bodes best in you...</span>
+          </div>
+        </div>
+        <div class="f3">
+          <span>Expand All</span>&nbsp&nbsp
+          <span class="bi bi-chevron-down"></span>
+        </div>
+      <div class="f1">
+        <div class="row1">
+          <div>
+            <img src="./assets/mxplayer-logo.png" class="image2">
+          </div>
+          <div class="info2">
+            <span>Amazon MX Player is your one-stop destination for all your entertainment such as</span><br>
+            <span>latest movies, most popular web shows, Live TV channels, newly released songs</span><br>
+            <span>etc</span>
+          </div>
+          <div class="apps">
+            <span>Follow us for update</span>&nbsp&nbsp
+            <span class="bi bi-facebook"></span>&nbsp&nbsp
+            <span class="bi bi-twitter"></span>&nbsp&nbsp
+            <span class="bi bi-youtube"></span>&nbsp&nbsp
+            <span class="bi bi-linkedin"></span>&nbsp&nbsp
+            <span class="bi bi-instagram"></span>
+          </div>
+        </div>
+        <div class="row2">
+            <ol>
+                <h3>Company</h3>
+                <li>About Us</li>
+                <li>Video Player</li>
+                <li>Contact Us</li>
+                <li>FAQ</li>
+            </ol>
+        </div>
+        <div class="row3">
+            <ol>
+                <h3>Legal</h3>
+                <li>Download Apps</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>Content Complaints</li>
+                <li>Compliance Report</li>
+            </ol>
+        </div>
+        <div class="row4">
+            <h3>install our Mobile App for Best Experience</h3>
+            <div class="info4">
+                <span>Open camera or any QR scanner</span><br>
+                <span>app on your mobile</span>
+            </div>
+            <div class="info1">
+                <span>Scan this QR code and you'll</span><br>
+                <span>prompt a download link</span>
+            </div>
+            <div class="info3">
+                <span>App Available on</span>&nbsp&nbsp
+                <span class="bi bi-google-play"></span>&nbsp
+                <span class="bi bi-apple"></span>
+                <img src="https://assets-6.mxplay.com/static/mxoneweb/desktop/images/mx-app-qr-v2.png" class="image3">
+            </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

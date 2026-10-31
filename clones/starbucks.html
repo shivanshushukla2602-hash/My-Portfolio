@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Starbucks Coffee Company</title>
+    <style type="text/css">
+      header{
+        display:flex;
+        justify-content:space-between;
+      }
+      .h1{
+        font-weight:bold;
+        font-size:15px;
+        word-spacing:30px;
+        cursor:pointer;
+        color:rgb(1, 55, 1);
+        margin-top:20px;
+        margin-left:-700px;
+      }
+      .h2{
+        font-size:18px;
+        margin-right:9px;
+        margin-top:20px;
+        cursor:pointer;
+      }
+      .bi-geo-alt-fill{
+        padding-right:10px;
+      }
+      .b2{
+        background-color:black;
+        color:white;
+        cursor:pointer;
+        margin-left:15px;
+        width:80px;
+        height:30px;
+        border-radius:40px;
+        font-weight:bold;
+      }
+      .b1{
+        cursor:pointer;
+        margin-left:15px;
+        width:80px;
+        height:30px;
+        border-radius:40px;
+        font-weight:bold;
+      }
+      .logo{
+        width:4%;
+      }
+      .b3{
+        margin-left:15px;
+        width:120px;
+        height:40px;
+        border-radius:40px;
+        font-weight:bold;
+        background-color:rgba(1, 45, 1, 0.878);
+        border:1px solid white;
+        color:white;
+        font-size:15px;
+        cursor:pointer;
+      }
+      .s1{
+        border:1px solid black;
+        background-color:rgba(1, 45, 1, 0.878);
+        height:100px;
+        color:white;
+        font-weight:bold;
+        text-align:center;
+        align-content:center;
+        margin-top:10px;
+      }
+      .title{
+        font-size:30px;
+      }
+      .s2{
+      display:grid;
+      grid-template-columns:6fr 6fr;
+      margin-top:30px;
+      text-align:center;
+      }
+      .b4{
+        width:180px;
+        height:40px;
+        border-radius:60px;
+        font-weight:bold;
+        background-color:rgba(44, 1, 1, 0.869);
+        border:1px solid white;
+        color:white;
+        font-size:25px;
+        cursor:pointer;
+      }
+      .image1{
+        width:100%;
+      }
+      .card1{
+        background-color:rgba(44, 1, 1, 0.869);
+        color:white;
+        width:100%;
+      }
+      .card-title-1{
+        margin-top:150px;
+        font-size:60px;
+      }
+      .card-body-1{
+        margin-top:30px;
+        font-size:30px;
+        line-height:30px;
+      }
+      .card-footer-1{
+        margin-top:30px;
+        font-size:30px;
+      }
+      .card2{
+        background-color:beige;
+        width:100%;
+        font-size:60px;
+      }
+      .card-title-2{
+        color:darkgreen;
+        margin-top:100px;
+        font-size:30px;
+      }
+      .card-body-2{
+        color:black;
+        margin-top:30px;
+        font-size:18px;
+        line-height:30px;
+      }
+      .b5{
+        background-color: darkgreen;
+        color:white;
+        width:150px;
+        height:40px;
+        border-radius:60px;
+        font-weight:bold;
+        border:1px solid white;
+        color:white;
+        font-size:15px;
+        cursor:pointer;
+      }
+      .s3{
+        display:grid;
+        grid-template-columns:6fr 6fr;
+        margin-top:30px;
+        text-align:center; 
+      }
+      .card-body-3{
+        color:green;
+        line-height:35px;
+        font-size:20px;
+        margin-top:30px;
+      }
+      .b6{
+        background-color: beige;
+        color:black;
+        width:150px;
+        height:40px;
+        border-radius:60px;
+        font-weight:bold;
+        border:1px solid black;
+        color:black;
+        font-size:15px;
+        cursor:pointer;
+      }
+      .b7{
+        background-color: rgba(44, 1, 1, 0.869);
+        color:white;
+        width:150px;
+        height:40px;
+        border-radius:60px;
+        font-weight:bold;
+        border:1px solid white;
+        font-size:15px;
+        cursor:pointer;
+      }
+      .card4{
+        background-color:rgba(44, 1, 1, 0.869);
+        color:white;
+        width:100%;
+      }
+      .image2{
+        width:100%;
+      }
+      .card-title-4{
+        margin-top:150px;
+        font-size:28px;
+        font-weight:bold;
+      }
+      .card-body-4{
+        margin-top:30px;
+        font-size:20px;
+        line-height:40px;
+      }
+      .card-footer-4{
+        margin-top:30px;
+        font-size:20px;
+      }
+      .s4{
+        height:150px;
+        align-content:center;
+        text-align:center;
+        margin-top:50px;
+      }
+      .s5{
+        height:150px;
+        align-content:center;
+        text-align:center;
+      }
+      p{
+        line-height:30px;
+      }
+      main{
+        display:grid;
+        grid-template-columns: 6fr 6fr;
+        margin-top:30px;
+        color:white;
+      }
+      .card5{
+        background-color:rgba(1, 61, 1, 0.789);
+        text-align:center;
+        align-content:center;
+      }
+      .card-title-5{
+        font-size:60px;
+        font-weight:bold;
+      }
+      .card-body-5{
+        margin-top:30px;
+        font-size:30px;
+        line-height:35px;
+      }
+      .card-footer-5{
+        margin-top:30px;
+      }
+      .b8{
+        background-color:rgba(1, 61, 1, 0.789);
+        color:white;
+        width:120px;
+        height:40px;
+        border-radius:40px;
+        border:1px solid white;
+        font-weight:bold;
+        font-size:18px;
+        cursor:pointer;
+      }
+      .s6{
+        display:flex;
+        margin-top:80px;
+      }
+      ol{
+        list-style-type:none;
+      }
+      li{
+        line-height:44px;
+        color:gray;
+        font-size:20px;
+        cursor:pointer;
+      }
+      h3{
+        font-weight:none;
+      }
+      .apps{
+        padding-left:30px;
+        word-spacing:20px;
+        font-size:40px;
+        cursor:pointer;
+      }
+      .s7{
+        margin-top:80px;
+      }
+      .copyright{
+        color:gray;
+        margin-left:35px;
+      }
+      .options{
+        color:black;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./assets/starbucks-logo.png" class="logo"> 
+        <div class="h1">
+            <span class="title1">MENU</span>
+            <span class="title1">REWARDS</span>
+            <span class="title1">GIFT CARDS</span>
+        </div>
+         <div class="h2">
+            <span class="bi bi-geo-alt-fill">Find a store</span>
+            <button class="b1">sign In</button>
+            <button class="b2">Join now</button>
+        </div>
+    </header>
+    <section class="s1">
+       <span class="title">It's a great day for coffee</span>
+       <button class="b3">Start an Order</button>
+    </section>
+    <section class="s2">
+        <div>
+            <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-100683.jpg" class="image1">
+        </div>
+        <div class="card1">
+          <div class="card-title-1">
+            <span>Protein just</span><br>
+            <span>dropped</span>
+          </div>
+          <div class="card-body-1">
+            <span>Your drink is getting a major upgrade. Level</span><br>
+            <span>up with protein cold foam or protein-</span><br>
+            <span>boosted milk, or choose a new favorite from</span><br>
+            <span>our menu.*</span>
+          </div>
+          <div class="card-footer-1">
+            <button class="b4">Learn more</button>
+          </div>
+        </div>
+    </section>
+    <section class="s2">
+        <div class="card2">
+          <div class="card-title-2">
+            <span>Fall. Starts. Now.</span>
+          </div>
+          <div class="card-body-2">
+            <span>Our fall flavors are officially here. Time for all things</span><br>
+            <span>pumpkin and pecan, including the new Pecan Oatmilk</span><br>
+            <span>Cortado.</span>
+          </div>
+          <div class="card-footer-2">
+            <button class="b5">View the menu </button>
+          </div>
+        </div>
+         <div>
+            <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-100122.jpg" class="image1">
+        </div>
+    </section>
+     <section class="s2">
+        <div>
+            <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-101216.jpg" class="image1">
+        </div>
+        <div class="card2">
+          <div class="card-title-2">
+            <span>Love it? Get it free.</span>
+          </div>
+          <div class="card-body-3">
+            <span>Just join Starbucks® Rewards and enjoy a <b>free drink</b>with</span><br>
+            <span>a qualifying purchase during your first week.**</span>
+          </div>
+          <div class="card-footer-2">
+            <button class="b6">Join & Order</button>
+          </div>
+        </div>
+    </section>
+    <section class="s3">
+       <div class="card4">
+         <div class="card-title-4">
+           <span>Our enchanting new collection</span>
+         </div>
+         <div class="card-body-4">
+           <span>American artist Mike Willcox honors coffee-growing</span>
+           <span>regions with captivating Art Deco symbolism. For a</span>
+           <span>limited time.</span>
+         </div>
+         <div class="card-footer-4">
+           <button class="b7">Learn more</button>
+         </div>
+       </div>
+       <div>
+        <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-100051.jpg" class="image2">
+       </div>
+    </section>
+    <main>
+        <div>
+            <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-100632.jpg" class="image2">
+        </div>
+        <div class="card5">
+          <div class="card-title-5">
+            <span>Freshly brewed ,</span><br>
+            <span>just for you</span>
+          </div>
+          <div class="card-body-5">
+            <span>Order your favorite light, medium, dark or</span><br>
+            <span>decaf Starbucks coffee roast and our baristas</span><br>
+            <span>will brew a fresh cup.</span>
+          </div>
+          <div class="card-footer-5">
+            <button class="b8">Order now</button>
+          </div>
+        </div>
+    </main>
+    <section class="s4">
+      <p>
+        <span>*Protein Info: Assumes grande size. Grams of protein are approximate. Customizations: Additional</span><br>
+        <span>charges may apply for customizations.</span>
+      </p>
+    </section>
+    <section class="s5">
+      <p>
+        <span>**Valid for new Starbucks Rewards members for 7 days from sign up. Coupon will be available in</span><br>
+        <span>the offers tab of your Starbucks app following sign up and may take up to 48 hours to arrive. Good</span><br>
+        <span>at participating U.S. stores for a handcrafted menu-sized beverage ($8 max value) with qualifying</span><br>
+        <span>purchase. Qualifying purchase excludes alcohol, Starbucks Cards, and Starbucks Cards reloads.</span><br>
+        <span>Limit one. Cannot be combined with other offers or discounts. Excludes delivery services. Sign up</span><br>
+        <span>by 1/5/2026.</span>
+      </p>
+    </section>
+    <footer>
+        <section class="s6">
+          <ol>
+            <h3>About Us</h3>
+            <li>Our Company</li>
+            <li>Our Coffee</li>
+            <li>About Starbucks</li>
+            <li>Starbucks Archive</li>
+            <li>Investor Relations</li>
+            <li>Customer Service</li>
+            <li>Contact Us</li>
+          </ol>
+          <ol>
+            <h3>Careers</h3>
+            <li>Culture and Values</li>
+            <li>Belonging at Starbucks</li>
+            <li>
+                <span>College Achievement</span><br>
+                <span>Plan</span>
+            </li>
+            <li>Aliumni Community</li>
+            <li>U.S. Careers</li>
+            <li>International Careers</li>
+          </ol>
+          <ol>
+            <h3>Social Impact</h3>
+            <li>Communities</li>
+            <li>Starbucks Foundation</li>
+            <li>Sustainability</li>
+            <li>
+                <span>Environment and Social</span><br>
+                <span>Impact Reporting</span>
+            </li>
+          </ol>
+          <ol>
+            <h3>For Buisness Partners</h3>
+            <li>Landlord Support Center</li>
+            <li>Suppliers</li>
+            <li>Corporate Gift Card Sales</li>
+            <li>
+                <span>Office and Foodservice</span><br>
+                <span>Coffee</span>
+            </li>
+          </ol>
+          <ol>
+            <h3>Order and Pick Up</h3>
+            <li>Order on the app</li>
+            <li>Order on the web</li>
+            <li>Delivery</li>
+            <li>
+                <span>Order and Pick Up</span><br>
+                <span>Options</span>
+            </li>
+            <li>
+                <span>Explore and Find Coffee</span><br>
+                <span>for Home</span>
+            </li>
+          </ol>
+        </section>
+        <section class="s7">
+            <div class="apps">
+                <span class="bi bi-spotify"></span>
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-pinterest"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-youtube"></span>
+            </div>
+            <div>
+                <ol>
+                    <li class="options">Privacy Notice</li>
+                    <li class="options">Consumer Health Privacy Notice</li>
+                    <li class="options">Terms of Use</li>
+                    <li class="options">Do Not Sell or Share My Personal Information</li>
+                    <li class="options">CA Supply Chain Act</li>
+                    <li class="options">Accessibility</li>
+                    <li class="options">Cookie Preferences</li>
+                </ol>
+            </div>
+            <div class="copyright">© 2025 Starbucks Coffee Company. All rights reserved.</div>
+        </section>
+    </footer>
+</body>
+</html>

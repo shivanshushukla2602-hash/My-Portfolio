@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <title>Flipkart.com</title>
+    <style type="text/css">
+        header{
+            display:flex;
+            justify-content:space-evenly;
+            background-color:white;
+            height:60px;
+            top:0;
+            position:sticky;
+        }
+        .flipkart-logo{
+            margin-left:-70px;
+            padding-top:10px;
+            cursor:pointer;
+        }
+        .b1{
+          background-color: rgb(236, 244, 250);
+          width:670px;
+          border:unset;
+          height:40px;
+          border-radius:9px;
+          font-size:20px;
+          color:gray;
+          text-align:unset;
+          margin-left:-30px;
+          
+          
+        }
+        .h2{
+            padding-top:10px;
+        }
+        .b2{
+            background-color: white;
+            color:black;
+            border:unset;
+            font-size:18px;
+            padding-top:15px;
+            padding:20px;
+            cursor:pointer;
+        }
+        section{
+            display:flex;
+            justify-content:space-around;
+            background-color: white;
+            margin-top:7px;
+            text-align:center;
+            padding:12px;
+            font-weight:bold;
+            font-size:15px;
+            padding-left:40px;
+            padding-right:60px
+        }
+        .icons{
+            width:50%;
+            padding-top:10px;
+            cursor:pointer;
+        }
+        article{
+            display: flex;
+            flex-wrap:nowrap;
+            margin-top:15px;
+            background-color: white;
+            cursor:pointer;
+            overflow:auto;
+        }
+        .card{
+            background-color: white;
+            padding:30px;
+        }
+        .card-header{
+            width:80%;
+        }
+        .m1{
+            background-color:white;
+            margin-top:-10px;
+        }
+        .phone{
+            width:80%;
+            margin-top:-5px;
+            cursor: pointer;
+        }
+        h2{
+            background-color: white;
+            height:50px;
+            padding-top:10px;
+            padding-left:10px;
+        }
+        .phone-list{
+            display:flex;
+            text-align:center;
+        }
+        .price{
+            font-weight:bold;
+        }
+        .card-footer{
+            margin-left:-30px;
+            margin-top:10px;
+        }
+        .row{
+            display:grid;
+            grid-template-columns:4fr 4fr 4fr;
+            padding:1px;
+            margin-left:12px;
+            margin-right:-4px;
+        }
+        .image{
+            width:99%;
+            cursor:pointer;
+        }
+        .m2{
+            background-color:white;
+            margin-top:10px;
+            
+        }
+        .m3{
+            background-color: white;
+            height:400px;
+            margin-top:-10px;
+        }
+        .essentials{
+            display:flex;
+            
+        }
+        .photo{
+            width:100%;
+            cursor:pointer;
+        }
+        .photo2{
+          margin-left:-30px;
+          cursor:pointer; 
+        }
+        .card1{
+            padding:40px;
+        }
+        .card-footer1{
+            text-align:center;
+            margin-left:-7px;
+            margin-top:20px;
+        }
+        .card-footer1-2{
+            text-align:center;
+            margin-left:-70px;
+        }
+        .card-footer1-1{
+            text-align:center;
+            margin-left:-95px;
+            margin-top:100px;
+        }
+        .style{
+            font-weight:bold;
+        }
+        .card-header1{
+            margin-top:-35px;
+        }
+        .m4{
+            display:flex;
+            background-color:white;
+            margin-top:10px;
+        }
+        .posters{
+            width:98%;
+            cursor:pointer;
+        }
+        .m5{
+          
+          margin-top:10px;
+        }
+       .card-body{
+          display:grid;
+          grid-template-columns: 6fr 6fr;  
+          width:90%;
+          text-align:center;
+          margin-top:-10px;
+       }
+       .bi-arrow-right-circle-fill{
+        color:blue;
+        cursor:pointer;
+       }
+       .image2-1{
+        width:56%;
+        margin-top:8px;
+       }
+       .image2-2{
+        width:38%;
+        margin-top:8px;
+       }
+       .image2-3{
+        width:45%;
+        margin-top:8px;
+       }
+       .image2-4{
+        width:26%;
+        margin-top:8px;
+       }
+       .card2{
+        width:470px;
+        height:450px;
+        background-color: white;
+       }
+       .row2{
+        border:1px solid lightgray;
+        border-radius:5px;
+        margin-left:10px;
+        margin-top:5px;
+        justify-content:center;
+        cursor:pointer;
+       }
+       .off{
+        color:green;
+        font-weight:bold;
+       }
+       .cards{
+          display:grid;
+          grid-template-columns: 4fr 4fr 4fr;
+         
+       }
+       .shopnow{
+          width:490px;
+          height:453px;
+          cursor:pointer;
+       }
+       .offers{
+        width:100%;
+       }
+       .a2{
+        margin-top: 5px;
+       }
+       .m6{
+        background-color: white;
+        margin-top:-10px;
+        width:100vw;
+        height:50vh;
+       }
+       .mobile-1{
+        width:25%;
+        cursor:pointer;
+       }
+       .mobile-2{
+        width:27%;
+        cursor:pointer;
+       }
+       .card3{
+        display: flex;
+        text-align:center;
+        margin-right:1050px;
+        
+       }
+       .container-2{
+        margin-left:-850px;
+        cursor:pointer;
+       }
+       .bi-currency-rupee{
+        font-weight:bold;
+       }
+       strike{
+        color:gray;
+       }
+       footer{
+        background-color: black;
+        color:white;
+        height:300px;
+       }
+       .footer-1{
+          background-color: black;
+          color:white;
+          height:300px;
+          display:flex;
+       }
+       .footer-2{
+          background-color: black;
+          color:white;
+          display:flex;
+       }
+       .row-a{
+        display:grid;
+        grid-template-columns:3fr 3fr 3fr 3fr;
+        margin-left:20px;
+       }
+      .row-b{
+        display:grid;
+        grid-template-columns:6fr 6fr;
+        margin-left:50px;
+       }
+       .footer{
+        display:flex;
+        
+       }
+      .bi-facebook{
+        color:gray;
+      }
+      .bi-youtube{
+        padding-left:10px;
+        color:gray;
+      }
+      .bi-twitter{
+        padding-left:10px;
+        color:gray;
+      }
+      .bi-instagram{
+        padding-left:10px;
+        color:gray;
+      }
+      h4{
+        color:gray;
+      }
+      b{
+        color:rgb(0, 81, 241)
+      }
+      .points{
+        line-height:20px;
+        cursor:pointer;
+      }
+      .social{
+        line-height:20px;
+        cursor:pointer;
+      }
+      .h3{
+        display:flex;
+        
+      }
+    </style>
+</head>
+<body bgcolor="lightgray">
+    <header>
+        <div>
+            <img src="./assets/flipkart.logo.png" class="flipkart-logo">
+        </div>
+        <div class="h2">
+            <button class="b1">
+                <span class="bi bi-search"></span>
+                <span>Search for Products , brands and more</span>
+            </button>
+        </div>
+        <div class="h3">
+            <button class="b2"> 
+                <span class="bi bi-person-circle">&nbsp&nbspLogin</span>&nbsp
+                <span class="bi bi-chevron-down"></span>
+            </button>
+            <button class="b2">
+                <span class="bi bi-cart">&nbspCart</span>
+            </button>
+            <button class="b2">
+                <span class="bi bi-shop-window">&nbspBecome a Seller</span>
+            </button>
+            <button class="b2">
+                <span class="bi bi-three-dots-vertical"></span>
+            </button>
+        </div>
+    </header>
+    <section>
+        <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/3dbe4c89fbf0003d.png?q=100" class="icons">
+            <p>Minutes</p>
+        </div>
+        <div>
+           <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/cd6aca4f61e8ea95.png?q=100" class="icons">
+            <p>Mobiles & Tablets</p> 
+        </div>
+        <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/9c64dfa667885ca9.png?q=100" class="icons">
+            <p>TVs & Appliances</p>
+        </div>
+        <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/4d6b13d5a0e0724a.png?q=100" class="icons">
+            <p>Electronics</p>
+        </div>
+        <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/ec2982e5564fe07c.png?q=100" class="icons">
+            <p>Fashion</p>
+        </div>
+        <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/febcb9896245caf4.png?q=100" class="icons">
+            <p>Home & Kitchen</p>
+        </div>
+        <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/3d7144345bbcf2e4.png?q=100" class="icons">
+            <p>Beauty & Toys</p>
+        </div>
+        <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/cddd92e134ba3ea9.png?q=100" class="icons">
+            <p>Furniture</p>
+        </div>
+        <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/d9eea6cd0e7b68bb.png?q=100" class="icons">
+            <p>Flight Bookings</p>
+        </div>
+        <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/2ebb95ec20eae8f1.png?q=100" class="icons">
+            <p>Grocery</p>
+        </div>
+    </section>
+    <article>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/eee9bebbcf13c4ac.jpg?q=60" width="100%">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/57150787d5a2d37a.jpeg?q=60" width="100%">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/369805eb118b419d.jpeg?q=60" width="100%">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/45dba736a29e7cd2.jpeg?q=60" width="100%">
+    </article>
+    <main class="m1">
+        <h2>Best deals on Smartphones</h2>
+        <div class="phone-list">
+          <div class="card">
+            <div class="card-header">
+                <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/mobile/h/q/k/-original-imahfw4vamrf5xhf.jpeg?q=60" width="50%" class="phone">
+            </div>
+            <div class="card-footer">
+                <div>OPPO K13x 5G</div>
+                <div class="price">
+                    <span>From</span>
+                    <span class="bi bi-currency-rupee">9,499</span>
+                </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+                <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/mobile/y/w/k/-original-imahfvpcn3j8qwzk.jpeg?q=60" width="50%" class="phone">
+            </div>
+            <div class="card-footer">
+                <div>MOTO Edge 60 Pro 5G</div>
+                <div class="price">
+                    <span>From</span>
+                    <span class="bi bi-currency-rupee">24,999</span>
+                </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+                <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/mobile/r/4/p/-original-imahf47e6gzt3ggw.jpeg?q=60" width="50%" class="phone">
+            </div>
+            <div class="card-footer">
+                <div>Realme P4 5G</div>
+                <div class="price">
+                    <span>From</span>
+                    <span class="bi bi-currency-rupee">14,999</span>
+                </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+                <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/mobile/f/k/e/-original-imahbfd4zqn9zazz.jpeg?q=60" width="50%" class="phone">
+            </div>
+            <div class="card-footer">
+                <div>OPPO K13 5G</div>
+                <div class="price">
+                    <span>From</span>
+                    <span class="bi bi-currency-rupee">14,999</span>
+                </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+                <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/mobile/j/n/1/-original-imah9gtmya9qhqse.jpeg?q=60" width="50%" class="phone">
+            </div>
+            <div class="card-footer">
+                <div>Realme P3x 5G</div>
+                <div class="price">
+                    <span>From</span>
+                    <span class="bi bi-currency-rupee">10,999</span>
+                </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+                <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/mobile/q/b/o/-original-imahfghxxmadhjm4.jpeg?q=60" width="50%" class="phone">
+            </div>
+            <div class="card-footer">
+                <div>Realme P4 Pro 5G</div>
+                <div class="price">
+                    <span>From</span>
+                    <span class="bi bi-currency-rupee">21,999</span>
+                </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <main class="m2">
+        <div class="row">
+          <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/1040/560/image/c5d0453a8ad30643.jpg?q=60" class="image">
+          </div>
+          <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/1040/560/image/58d6d6db07978e56.jpg?q=60" class="image">
+          </div>
+          <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/1040/560/image/a62ef5d49f9735da.jpg?q=60" class="image">
+          </div>
+        </div>
+        <div class="row">
+        <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/1040/560/image/d81749f2b7369dfd.jpg?q=60" class="image">
+        </div>
+        <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/1040/560/image/7f568f957d69c47e.jpg?q=60" class="image">
+        </div>
+        <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/1040/560/image/c0381ba1a743d06f.jpg?q=60" class="image">
+        </div>
+        </div>
+    </main>
+    <main class="m3">
+        <h2>Top deals on Appliances</h2>
+        <div class="essentials">
+        <div class="card1">
+            <div class="card-header1">
+               <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/television/t/w/t/-original-imahfugqyvv6ktc6.jpeg?q=60" class="photo">
+            </div>   
+            <div class="card-footer1-1">
+               <div>Premium TVs</div>
+               <div class="style">
+                <span>From</span>
+                <span class="bi bi-currency-rupee">15,499</span>
+               </div>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="card-header1">
+               <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/refrigerator-new/b/e/o/-original-imahf8h4n8fgyswt.jpeg?q=60" class="photo2">
+            </div>
+            <div class="card-footer1-2">
+               <div>Best Selling Refrigerator</div>
+               <div class="style">
+                <span>From</span>
+                <span class="bi bi-currency-rupee">9,990</span>
+               </div>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="card-header1">
+               <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/washing-machine-new/r/b/m/-original-imah2tx7cyakc7p8.jpeg?q=60" class="photo">
+            </div>
+            <div class="card-footer1">
+               <div>Trending Deals</div>
+               <div class="style">
+                <span>Shop now!</span>
+               </div>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="card-header1">
+               <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/mixer-grinder-juicer/i/0/m/-original-imaghy69gbrjwkvz.jpeg?q=60" class="photo">
+            </div>
+            <div class="card-footer1">
+               <div>Kitchen Essentials</div>
+               <div class="style">
+                <span>From</span>
+                <span class="bi bi-currency-rupee">1249</span>
+               </div>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="card-header1">
+               <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/water-purifier/q/d/w/m2-needs-no-service-for-2-years-10-stage-filtration-native-by-original-imah2usukstmh2ru.jpeg?q=60" class="photo">
+            </div>
+            <div class="card-footer1">
+               <div>Home Essentials</div>
+               <div class="style">
+                <span>Shop now!</span>
+               </div>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="card-header1">
+               <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/water-geyser/j/x/y/-original-imagrty2vtc9gruj.jpeg?q=60" class="photo">
+            </div>
+            <div class="card-footer1">
+               <div>Fans & geysers</div>
+               <div class="style">
+                <span>From</span>
+                <span class="bi bi-currency-rupee">799</span>
+               </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <main class="m4">
+        <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/1040/560/image/1851521e1446cb04.jpg?q=60" class="posters">
+        </div>
+        <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/1040/560/image/54b27b91e1b00449.jpg?q=60" class="posters">
+        </div>
+        <div>
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/1040/560/image/7fd6c110d38e5900.jpg?q=60" class="posters">
+        </div>
+    </main>
+    <main class="m5">
+        <div class="cards">
+          <div class="card2">
+            <div class="card-title">
+              <h2>
+                <span>Best Value Deals on Fashion</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <span class="bi bi-arrow-right-circle-fill"></span>
+            </h2>
+            </div>
+            <div class="card-body">
+              <div class="row2">
+                <div>
+                   <img src="https://rukminim2.flixcart.com/image/420/420/xif0q/headphone/x/z/r/new-edition-tws-m19-gaming-earbuds-bluetooth-5-0-wireless-led-original-imahgfkvaw6tpya9.jpeg?q=60" class="image2-1">
+                </div>
+                <div>
+                    <span>True Wireless</span><br>
+                    <span class="off">Min. 50% Off</span>
+                </div>
+                </div>
+              <div class="row2">
+                <div>
+                   <img src="https://rukminim2.flixcart.com/image/420/420/xif0q/watch/n/o/n/1-sra1193-leathertone-men-women-original-imahfyu9jmygfay4.jpeg?q=60" class="image2-2">
+                </div>
+                <div>
+                    <span>Wrist Watches</span><br>
+                    <span class="off">Min. 90% Off</span>
+              </div>
+              </div>
+              <div class="row2">
+                <div>
+                   <img src="https://rukminim2.flixcart.com/image/420/420/xif0q/shoe/l/f/y/10-trm2542-10-0-trm-black-original-imahf438dpg2w8y7.jpeg?q=60" class="image2-3">
+                </div>
+                <div>
+                    <span>Men's Casual Shoes</span><br>
+                    <span class="off">Min. 70% Off</span>
+                </div>
+              </div>
+               <div class="row2">
+                <div>
+                   <img src="https://rukminim2.flixcart.com/image/420/420/kchzhjk0/slipper-flip-flop/o/z/w/10-baba011-jasvi-black-original-imafthwfbfapsmjk.jpeg?q=60" class="image2-4">
+                </div>
+                <div>
+                    <span>Men's Slippers & Flip-Flops</span><br>
+                    <span class="off">Min. 90% Off</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card2">
+            <div class="card-title">
+              <h2>
+                <span>Make your home more stylish</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <span class="bi bi-arrow-right-circle-fill"></span>
+            </h2>
+            </div>
+            <div class="card-body">
+              <div class="row2">
+                <div>
+                   <img src="https://rukminim2.flixcart.com/image/420/420/xif0q/massage-chair/z/g/w/mz24-zero-gravity-3d-full-body-home-massager-with-bluetooth-original-imagx7kcdkgdmjbc.jpeg?q=60" class="image2-1">
+                </div>
+                <div>
+                    <span>Massage Chairs</span><br>
+                    <span class="off">Min. 50% Off</span>
+                </div>
+                </div>
+              <div class="row2">
+                <div>
+                   <img src="https://rukminim2.flixcart.com/image/420/420/k48rwcw0/shoe-rack/g/m/q/grey1-eemway-original-imafn79hzzndrueh.jpeg?q=60" class="image2-1">
+                </div>
+                <div>
+                    <span>Shoe Rack</span><br>
+                    <span class="off">Min. 50% Off</span>
+              </div>
+              </div>
+              <div class="row2">
+                <div>
+                   <img src="https://rukminim2.flixcart.com/image/420/420/kpedle80/shoe-rack/u/l/1/shoe-stand-storage-utility-organizer-chappal-stand-foldable-shoe-original-imag3mxmj8umszcz.jpeg?q=60" class="image2-2">
+                </div>
+                <div>
+                    <span>Collapsible Wardrobe</span><br>
+                    <span class="off">Min. 50% Off</span>
+                </div>
+              </div>
+               <div class="row2">
+                <div>
+                   <img src="https://rukminim2.flixcart.com/image/420/420/xif0q/bed/g/v/x/single-na-no-synthetic-no-portable-folding-bed-3x6-feet-bed-size-original-imags27jhvtjrkfc.jpeg?q=60" class="image2-2">
+                </div>
+                <div>
+                    <span>Beds</span><br>
+                    <span class="off">Min. 50% Off</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="https://rukminim2.flixcart.com/www/1060/1480/promos/26/09/2023/6c3c5fe2-c236-4fa2-8d97-595e1e01da01.jpg?q=60" class="shopnow">
+          </div>
+        </div>
+    </main>
+    <article class="a2">
+      <div>
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/660/image/6cca15fac5686b58.jpg?q=60" class="offers">
+      </div>
+      <div>
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/660/image/f44a885cbb0f79cc.jpg?q=60" class="offers">
+      </div>
+      <div>
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/660/image/9d7be999ebabda9f.jpg?q=60" class="offers">
+      </div>
+      <div>
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/660/image/e48054bf0b262bc1.jpg?q=60" class="offers">
+      </div>
+    </article>
+    <main class="m6">
+        <h2>
+            <span>Recently&nbsp Viewed</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <span class="bi bi-arrow-right-circle-fill"></span>
+        </h2>
+        <div class="card3">
+            <div class="container-1">
+              <div>
+                  <img src="https://img.fkcdn.com/image/xif0q/mobile/g/d/g/-original-imahfw4ahckefvxe.jpeg" class="mobile-1">
+                </div>
+                <div>Galaxy S24 FE 5G</div>
+                <div>
+                    <span class="bi bi-currency-rupee">30,999</span>&nbsp
+                    <span>
+                        <strike>59,999</strike>
+                    </span>
+                </div>
+            </div>
+            <div class="container-2">
+              <div>
+                <img src="https://img.fkcdn.com/image/xif0q/mobile/w/z/h/-original-imahggetkf6y67sr.jpeg" class="mobile-2">
+              </div>
+                <div>iPhone 16 Pro Max</div>
+                <div>
+                    <span class="bi bi-currency-rupee">1,29,900</span>&nbsp
+                    <span>
+                        <strike>1,34,900</strike>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-1">
+          <div class="row-a">
+          <div class="points">
+            <h4>ABOUT</h4>
+            <span>Contact Us</span><br>
+            <span>About Us</span><br>
+            <span>Careers</span><br>
+            <span>Flipkart Stories</span><br>
+            <span>Press</span><br>
+            <span>Corporate Info</span>
+          </div>
+          <div class="points">
+            <h4>GROUP COMPANIES</h4>
+            <span>Myntra</span><br>
+            <span>Cleartip</span><br>
+            <span>Shopsy</span><br>
+          </div>
+          <div class="points">
+            <h4>HELP</h4>
+            <span>Payments</span><br>
+            <span>Shipping</span><br>
+            <span>Cancellation & Return</span><br>
+            <span>FAQ</span>
+          </div>
+          <div class="points">
+            <h4>CONSUMER POLICY</h4>
+            <span>Cancellation & Returns</span><br>
+            <span>Terms Of Use</span><br>
+            <span>Security</span><br>
+            <span>Privacy</span><br>
+            <span>Sitemap</span><br>
+            <span>Grievance Redressal</span><br>
+            <span>EPR Compliance</span>
+          </div>
+        </div>
+        <div class="row-b">
+                <div class="social">
+                  <h4>Mail Us :</h4>
+                  <span>Flipkart Internet Private Limited,</span><br>
+                  <span>Buildings Alyssa, Begonia&</span><br>
+                  <span>Clove Embassy Tech Village,</span><br>
+                  <span>Outer Ring Road, Devarabeesanahalli Village,</span><br>
+                  <span>Bengaluru , 560103</span><br>
+                  <span>Karnataka, India</span><br>
+                  <h4>Social :</h4>
+                  <span class="bi bi-facebook"></span>
+                  <span class="bi bi-youtube"></span>
+                  <span class="bi bi-twitter"></span>
+                  <span class="bi bi-instagram"></span>
+                </div>
+            </div>
+            <div>
+              <h4>Registered Office Address :</h4>
+              <div class="points">
+                <span>Flipkart Internet Private Limited,</span><br>
+                <span>Buildings Alyssa , Begonia &</span><br>
+                <span>Clove Embassy Tech Village,</span><br>
+                <span>Outer Ring Road, Devarabeesanahalli Village,</span><br>
+                <span>Bengaluru , 560103</span><br>
+                <span>Karnataka, India</span><br>
+                <span>CIN : U51109KA2012PTCO66107</span><br>
+                <span>Telephone: <b>044-45614700/044-67415800</b></span>
+              </div>
+            </div>
+    </footer>
+</body>
+</html>
