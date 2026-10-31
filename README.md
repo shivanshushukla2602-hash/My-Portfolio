@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <strong>Live deployment: awaiting Vercel sign-in</strong>
+  <a href="https://shiv-and-shu-portfolio.vercel.app"><strong>Visit the portfolio ↗</strong></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/shivanshushukla2602-hash">GitHub</a>
   &nbsp; · &nbsp;
@@ -94,7 +94,7 @@ To personalise it, edit the text and links in `index.html`, the theme in `styles
 
 ## Deployment
 
-**Live website:** Waiting for Vercel sign-in. The deployment link will be added here once published.
+**Live website:** [shiv-and-shu-portfolio.vercel.app](https://shiv-and-shu-portfolio.vercel.app)
 
 Hosted on **Vercel** as a static website. There is no portfolio server or database to configure. The included project demos keep their own requirements.
 
