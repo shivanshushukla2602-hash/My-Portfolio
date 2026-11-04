@@ -81,7 +81,8 @@ Open **http://localhost:8080**. Serve the folder over HTTP so the included proje
 My-Portfolio/
 ├── index.html         # Page content and sections
 ├── styles.css         # Layout, colours, responsive styles, and motion
-├── portfolio.js       # Tabs, project axis, menu, and contact interactions
+├── portfolio.js       # Project axis, menu, and contact interactions
+├── motion-scene.js    # Original WebGL field and scroll-driven 3D camera
 ├── assets/
 │   ├── fonts/         # Local fonts and their licenses
 │   └── images/        # Portraits and project screenshots

@@ -11,3 +11,6 @@ node_modules/
 .dist/
 output/
 REDESIGN.md
+
+# Separate GitHub profile source (published to its own repository)
+/github-profile/
